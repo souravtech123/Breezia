@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://www.shutterstock.com/image-photo/day-night-time-change-concept-600nw-2326233419.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    color: rgb(48, 48, 48);
+    margin: 75px auto 0px;
+    border-radius: 30px;
+    padding: 40px 35px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.55);
+    
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: aliceblue;
+    color: black;
+    height: 60px;
+    border-radius: 50%;
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.search button:hover{
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+.search button img {
+    width: 20px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px; 
+    
+
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+    height: 50px;
+}
+.humidity , .wind{
+    font-size: 30px;
+    margin-top: -6px;
+}
+.header{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  
+  
+  
+}
+.header img{
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ margin: 10px;
+ 
+ 
+}
+.header h1{
+    margin: 20px 20px 20px  5px;
+    color: whitesmoke;
+    font-family:  Tahoma, sans-serif;
+    font-family: 25px;
+    font-style: normal;
+    font-weight: 300;
+
+}
+h2.quote {
+    margin: 20px 20px 20px 370px;
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    background-color: black;
+
+}
+@keyframes color {
+0%{
+    color: yellow;
+    transform: scaleX(0deg);
+    
+}
+50%{
+    color: red;
+    transform: scaleX(180deg);
+}
+75%{
+    color: orange;
+    transform: scaleX(360deg);
+}
+100%{
+    color: yellow;
+    transform: scaleX(0deg);
+}
+}
+.error{
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 1px ;
+    font-size: 14px;
+    
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 350px;
+        height: 500px;
+        margin-top: 100px; 
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search input{
+        width: 200px;
+        height: 45px;
+    }
+    .search button{
+        width: 40px ;
+        height: 40px;
+        border-radius: 50%;
+    
+    }
+    .weather{
+        margin-top: 10px;
+    }
+    .weather-icon{
+        width: 100px;
+        height: 100px;
+    }
+    .weather h1{
+        font-size: 50px;
+    }
+    .weather h2{
+        font-size: 30px;
+    }
+    .detail{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .col {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+
+    }
+    .col img{
+        width: 50px;
+        margin-right: 10px;
+        height: 50px;
+    }
+    .humidity , .wind{
+        font-size: 15px;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    .header h1 {
+        margin-right: 100px;
+    }
+    .header h2{
+        display: none;
+    }
+
+}
